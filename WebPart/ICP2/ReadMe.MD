@@ -1,10 +1,10 @@
-**##Avinash Reddy
+##Avinash Reddy
 
 Email: atfkh@umsystem.edu
 
 GitHub : https://github.com/avinashreddy3/WebDevCourse/tree/main/WebPart/ICP2
 
-## Venubabu Linga
+**## Venubabu Linga
 
 email : vl6hw@umsystem.edu
 
