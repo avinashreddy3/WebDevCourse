@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>First WebPage ICP-2</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <style>
+    /*body background colour*/
+    body{
+
+      background-color: #e8da78;
+      background-repeat: no-repeat;
+      background-size: cover;
+      line-height: 2rem;
+    }
+    /*Header image and text alignment style*/
+    #column {
+      float: left;
+      padding: 12px;
+    }
+
+    /* Clearfix (clear floats) */
+    #content ::after {
+      content: "    ";
+      clear: both;
+      display: inline-block;}
+
+    /*the bottom div position with image click new tab and playing vedio.*/
+    .last{
+      text-align: center;
+      margin: auto;
+      padding-top: 30px;
+      line-height: 2.5rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+  </style>
+</head>
+<body>
+<!--Header Division-->
+<div id="content">
+  <!--Header with image tag-->
+  <div id="column">
+    <img src="img_1.png" width="350" height="210" alt="Image Missing"></div>
+
+  <!--    Header text code with H1 tag with colour-->
+  <div id="column">
+    <h1 style="color: rgb(15,35,141)"> Hello!! welcome to our Webpage....</h1>
+
+  </div>
+  <!--    Break tag for the next line-->
+  <br>
+  <br><br><br><br><br><br>
+  <!--    horizontal line code-->
+  <hr style="height:4px;border-width:0;color:gray;background-color:darkslategray">
+</div>
+
+
+<!--------content with  P tag ---->
+
+<div>
+  <h5>This HTML page illustrates elements like paragraphs,headings,unordered list,
+    ordered list,div & span elements,block and inline elements,image
+    links and video which are used in developing the web page.</h5>
+</div>
+
+<!--This segment has  unordered lists-->
+<div>
+  <h2 style="color: azure">Group details</h2>
+  <ul>
+    <!--elements in the list-->
+    <li>Venu Linga</li>
+    <li>Avinash Reddy</li>
+  </ul>
+
+  <h2 style="color: azure">Learning objectives of this class</h2>
+
+  <!--This segment has The Description Details element-->
+
+  <dl>
+    <!--title of the context-->
+    <dt>Web ICP's</dt>
+    <!-- description of the context-->
+    <dd> ** Going to have knowledge on developing web pages</dd>
+    <dt>Mobile ICP's</dt>
+    <dd> ** Will get to know how mobile applications pages are developed</dd>
+  </dl>
+  <!--This segment has ordered  lists-->
+  <h2 style="color: azure"> completed In Class Programming (ICP'S) list </h2>
+  <ol>
+    <!--elements in the list-->
+    <li> ICP1 - INSTALLATIONS (webstorm , GitHub components)</li>
+    <li> ICP2 - HTML page and CSS</li>
+  </ol>
+
+
+  <!--    in the below element both <strong> and <b> makes letters to bold-->
+  <h3><strong>ICP1 </strong></h3>
+  <p>Installations of webstorm and Github account setup,
+    Github components were briefly described in the first ICP</p>
+  <h4><b>ICP2 </b></h4>
+
+  <!--    in the below element  <small> makes letters to small size-->
+  <p><small>Development of html page with paragraphs,headings,unordered list,
+    ordered list,div & span elements,block and inline elements,image links and video.
+  </small></p>
+</div>
+
+
+<div class="last">
+  <p><strong>we added a image in the HTML file and should be clickable,i.e.,when
+    you click the image, it should redirect you to the YouTube. </strong></p>
+
+  <!--    the text is displayed in italics by the em tag-->
+  <p>
+    <em>
+      "Here we have given a <span style = "color:rgb(178,16,100)" ;>YOUTUBE IMAGE</span>
+      link to visit YouTube in new tab"
+    </em>
+  </p>
+
+  <a href="https://www.youtube.com/" target="_blank">
+    <img  alt="image not found" src="img_2.png" width="100" height="100"></a>
+  <br>
+  <p><em>"Thanks for watching the YouTube from the page"</em></p>
+
+
+  <!--this segment contains YouTube video with play and pause options-->
+  <div>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/88PXJAA6szs"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+             clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+
+  </div>
+<div>
+
+  <h3>PLease share your name and contact number for any Queries will get back to you</h3>
+  <!--    form tag for the first name and contact to submit for the Queries-->
+
+  <form action="">
+    <label for="firstname">First name: </label>
+    <input type="text">
+    <label for="contact" >Phone Number: </label>
+    <input type="text" >
+    <input type="submit" value="Submit">
+  </form>
+
+  <!--    Address tag used for the address of team-->
+  <address>
+    Developed by <a href="mailto:venulinga63@gmail">Venu&&avinash</a>.<br>
+    Visit us at: UMKC university,
+    kansas city,Missouri,
+    USA, 66223
+  </address>
+</div>
+</body>
+</html>
