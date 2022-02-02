@@ -1,4 +1,4 @@
-let userscore = 0;  //creating two variables user score and computer score
+let userscore = 0;  //creating 'user-score' and 'computer-score' as two variables
 let computerscore = 0;
 
 // getting values from the html file
@@ -9,11 +9,10 @@ const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissor_div = document.getElementById("s");
 
-// creates a function for computer choices
-
+// creating a function for computer-choices
 function getcomputerchoice() {
     const choices = ['r', 'p', 's'];
-    const randomnumber = Math.floor(Math.random() * 3);  // Math.floor is used for whole numbers Math.random is used to show random numbers between 0 and 1
+    const randomnumber = Math.floor(Math.random() * 3);  // Math.floor is used for whole numbers & Math.random to show random numbers.
     return choices[randomnumber]; // r = 0 , p =  1 ,
 }
 
@@ -24,15 +23,17 @@ function convertword(letter) {
     else return "Scissors"
 }
 
-// creating win lose and draw functions for the switch case
+// creating win, lose and draw functions, for the using in the switch case later below
+// win function
 function win(userchoice, computerchoice) {
     userscore++;
     userscore_span.innerHTML = userscore;   // innerHTML overwrites the obtained html data
     computerscore_span.innerHTML = computerscore;
-    result_p.innerHTML = `${convertword(userchoice)}  - ${convertword(computerchoice)} <br> you win.`; // `` are used so there is no need for "" and + function
+    result_p.innerHTML = `${convertword(userchoice)}  - ${convertword(computerchoice)} <br> you win.`; // `` are used, so there is no need for "" and + function
 
 }
 
+// lose function
 function lose(userchoice, computerchoice) {
     computerscore++;
     userscore_span.innerHTML = userscore;
@@ -41,6 +42,7 @@ function lose(userchoice, computerchoice) {
 
 }
 
+//draw function
 function draw(userchoice, computerchoice) {
     userscore_span.innerHTML = userscore;
     computerscore_span.innerHTML = computerscore;
@@ -48,7 +50,7 @@ function draw(userchoice, computerchoice) {
 
 }
 
-
+// analysing the user's and computer's choice and displaying the result accordingly using switch case method.
 function game(userchoice) {
     const computerchoice = getcomputerchoice();
 
@@ -57,24 +59,26 @@ function game(userchoice) {
         case "rs":
         case "pr":
         case "sp":
-            win(userchoice, computerchoice);
-            console.log("user wins");     // shows data in the console
+            win(userchoice, computerchoice); // collating both choices
+            console.log("user wins");     // prints putput data on the console
             break;
         case "rp":
         case "ps":
         case "sr":
-            lose(userchoice, computerchoice);
-            console.log("user loses");
+            lose(userchoice, computerchoice);// collating both choices
+            console.log("user loses");  // prints putput data on the console
             break;
         case "rr":
         case "pp":
         case "ss":
-            draw(userchoice, computerchoice);
-            console.log("Drawww");
+            draw(userchoice, computerchoice);// collating both choices
+            console.log("Drawww");  // prints putput data on the console
             break;
     }
 }
 
+
+// main method to call the functions and execute them for desired output.
 function main() {
     rock_div.addEventListener('click', function () {
         console.log("hey clicked rock");
@@ -91,4 +95,5 @@ function main() {
 
 }
 
+// calling main
 main();

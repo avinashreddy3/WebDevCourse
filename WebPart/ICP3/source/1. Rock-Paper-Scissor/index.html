@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!--This represents that the document type is HTML-->
+
+<html lang="en"> <!--HTML tag opens here, and we have added the attribute 'lang' and its value to 'en' which signifies that document is in English-->
+
+<head> <!--head tag open-->
+    <meta charset="UTF-8"> <!--This specifies the character encoding which is optional to add in the code-->
+    <title>ROCK-PAPER-SCISSORS</title> <!--effects the brower's title bar-->
+    <link href="index.css" type="text/css" rel="stylesheet">  <!-- link to css and specifies it as stylesheet!-->
+</head> <!--head tag closed-->
+
+<!-- body section opened, consists of everything that is to be displayed on the browser/webpage-->
+<body>
+
+    <!--start of the code-->
+<header> <!--defines the title or heading of the document content-->
+    <h1>ROCK-PAPER-SCISSORS</h1> <!--heading tag generally used to mark up the title-->
+</header>
+
+<!--to embed images in the webpages, image img tag is used-->
+<!--there are two options to specify the source of images, absolute path & relative path-->
+<!-- here in the sourse src attribute, the absolute path of image to be added is given-->
+<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGP56gAgvXnuvRm-p4rNe4voSdqLm6cL7rvfjVUTAd7SDaXGEf" alt="" class="center">
+<div class="scoreboard"> <!--division tag opened,its a block-level tag used to make divisions in the webpage contents-->
+    <div class="badge">USER : SYSTEM</div>
+    <span id="user-score">0</span> : <span id="computer-score">0</span> <!--span tag is used to mark the content, its an inline container-->
+</div> <!--div tag closed-->
+
+<!--This division part displays the results of the play-->
+<div class="result"> <!--class is an attribute used to pointing out when used in stylesheet similar to 'id' attribute-->
+    <p>START <br> select your choice </p> <!--paragragh tag--> <!--br tag used to insert line break in the document-->
+</div>
+
+<!--This part of div allows user to choose on his turn, which is coded using javascript-->
+<div class="choices"> <!--Three choices with the corresponding images are displayed, using absolute path on src attribute-->
+    <div class="choice" id="r">
+        <img src="https://www.clipartmax.com/png/middle/428-4288882_rock-paper-scissor-icon-png.png" alt="">
+    </div>
+    <div class="choice" id="p">
+        <img src="https://flyclipart.com/thumb2/rock-paper-scissors-game-246511.png" alt="">
+    </div>
+    <div class="choice" id="s">
+        <img src="https://www.seekpng.com/png/detail/111-1114370_rock-paper-scissors-rock-paper-scissors-clipart.png" alt="">
+    </div>
+</div>
+
+<p></p> <!--empty paragraph tag, here its just similar to 'br' tag-->
+
+<!--script tag is used to embed the javascript code-->
+<!--javascript allows to perform dynamic changes to webpage content-->
+<script src="index.js"></script> <!--source attribute points to the javascript file-->
+<! -- link to javascripts !-->
+<!--end of the code-->
+
+<!--displayed the message to instruct the user-->
+<div>
+    <p style="text-align:center; color: red ">!...REFRESH the Page to RESET the GAME...!</p> <!--used inline style attribute to style the content-->
+</div>
+</body> <!--body tag ends-->
+</html> <!--HTML tag closed-->

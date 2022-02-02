@@ -1,0 +1,97 @@
+/* based on box-sizing property, we reset the margin and padding of page to 0.*/
+/* margin is the space outside the border
+    padding is space between the border and the inside content.*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*specified the space between the content and border and also background color of entire header */
+header {
+    padding: 30px;
+    background-color: salmon;
+}
+
+/* this is to effect the content of the header*/
+header> h1
+{
+    color: darkblue;
+    text-align: center;
+    font-family: "Cooper Black";
+}
+
+/* given the background color of entire body of webpage */
+body {
+    background-color: blanchedalmond;
+}
+
+/* '.' is used to represent or call the class*/
+/* here div section refered with scoreboard class is designed to display results.*/
+.scoreboard
+{
+    border: 3px solid white;
+    width: 200px;
+    text-align: center;
+    margin: 20px auto;
+    color: midnightblue;
+    padding: 5px 5px;
+    font-family: Copperplate ; /* signifies font for an element*/
+    position: relative; /* setting its position relatively to its normal position */
+}
+
+/* styling the titles of the scoreboard i.e., 'user:system' */
+.badge{
+    background: indianred;
+    color: white;
+    font-size: initial;
+    padding: 5px 5px;
+}
+
+/* tailoring the result of the game play*/
+.result{
+    color: midnightblue;
+    text-align: center;
+    font-size: 40px;
+    font-family: Copperplate ; /* font for an element*/
+}
+
+/* this block is to position the images */
+.choices{
+    margin: 50px 0px;
+    text-align: center;
+}
+
+/* this block of code is used to align the three images to choose, in the same line i.e., side by side*/
+.choice{
+    display: inline-block; /* inline-block is used to display elements horizantally in a same line*/
+    margin: 0px 60px;
+    padding: 0px;
+}
+
+/* croping the rock, paper, scissors images to display*/
+.choices>.choice > img {
+    height: 100px;
+    width: 100px;
+}
+
+/* designed a bottom colored underline border when user hovers pointer on each */
+.choice:hover{
+    cursor: pointer;
+    background: firebrick;
+}
+
+/* styling the paragraph tags in the body section*/
+body> p {
+    text-align: center;
+    font-size: 25px;
+    color: midnightblue;
+    font-family: "Cooper Black";
+}
+
+/* displaying the game logo*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
