@@ -1,0 +1,77 @@
+/* styling the whole body of webpage */
+body{
+  margin: 2%;
+  border: 1px solid black;
+  background-color: black;
+}
+
+/* image styling */
+#image{
+    width: 250px;
+    height: 150px;
+    border:4px solid black;
+    margin:10px auto 25px auto;
+    background-color: #708090;
+    background-image: url('');
+    background-repeat: no-repeat;
+    color:#000000;
+    text-align: center;
+    background-size: 100%;
+    font-size: 100%;
+    line-height: 50px;
+}
+
+/* designing to display the image */
+.preview{
+    width:20%;
+    margin-left:9%;
+    border: 7px solid black;
+    background-color: black;
+
+}
+
+/* this is for paragraph content */
+p{
+    font-size: larger;
+    text-align: center;
+    background-color: #708090;
+    color: black;
+}
+
+/* simple buttons styling */
+button{
+    font-size: larger;
+    text-align: center;
+    background-color: #708090;
+    color: black;
+    margin: 10px 10px 30px 10px;
+}
+
+/* content styling */
+#content{
+    padding: 0 18px;
+    background-color: #708090;
+    width: 90%;
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid black;
+    border-radius: 20px
+}
+
+#buttons{
+    font-size: larger;
+    text-align: center;
+    color: black;
+    margin: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+
+#header{
+    border-radius: 20px;
+    width: 70%;
+    margin: 20px auto;
+}
+/* sizing the image */
+img {
+    width: 70%;
+}

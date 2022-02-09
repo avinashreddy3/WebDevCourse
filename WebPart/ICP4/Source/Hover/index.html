@@ -1,0 +1,37 @@
+<!DOCTYPE html> <!--This represents that the document type is HTML-->
+<html>
+<head>
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="gallery.css"> <!-- making a connection to css file-->
+    <script src = "gallery.js"></script><!-- making a connection to javascript file-->
+</head>
+<body>
+<!--main div section opens-->
+<div>
+    <p id = "image">Hover over an image below to display<p>
+        <!-- creating a responsive buttons -->
+    <div id="buttons">
+        <button onclick = "openFunction()">Explain pictures</button>
+        <button onclick = "closeFunction()">Hide explaination</button>
+        <p id="content">This is a photo gallery, displaying the logos of process of baking cupcakes.</p>
+    </div>
+</div>
+<p id="header">My CupCake Photo Gallery</p>
+
+<!-- using functions to update image according to response -->
+<img alt="Lets do Batter!" class="preview"
+     onmouseout="unDo()"
+     onmouseover="upDate(this)"
+     src="https://cdn.sallysbakingaddiction.com/wp-content/uploads/2017/06/moist-chocolate-cupcakes-7.jpg"> <!--img path, url to display online image-->
+
+<img alt="Lets Bake!" class="preview"
+     onmouseout="unDo()"
+     onmouseover="upDate(this)"
+     src="https://cdn.sallysbakingaddiction.com/wp-content/uploads/2017/06/moist-chocolate-cupcakes-6.jpg">
+
+<img alt="Cupcake is ready to eat!" class="preview"
+     onmouseout="unDo()"
+     onmouseover="upDate(this)"
+     src="https://cdn.sallysbakingaddiction.com/wp-content/uploads/2017/06/moist-chocolate-cupcakes-5.jpg">
+</body>
+</html>
