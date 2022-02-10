@@ -1,32 +1,33 @@
 /* styling the whole body of webpage */
 body{
   margin: 2%;
-  border: 1px solid black;
-  background-color: black;
+  padding: 10px;
+  border: 1px dashed white;
+  background-image: url(images/bg.jpg);
 }
 
 /* image styling */
 #image{
     width: 250px;
     height: 150px;
-    border:4px solid black;
+    border:4px solid white;
     margin:10px auto 25px auto;
     background-color: #708090;
     background-image: url('');
     background-repeat: no-repeat;
-    color:#000000;
+    color: whitesmoke;
     text-align: center;
     background-size: 100%;
     font-size: 100%;
     line-height: 50px;
 }
 
-/* designing to display the image */
+/* designing to border look for the gallery images */
 .preview{
     width:20%;
     margin-left:9%;
-    border: 7px solid black;
-    background-color: black;
+    border: 2px solid white;
+    background-color: white;
 
 }
 
@@ -45,16 +46,18 @@ button{
     background-color: #708090;
     color: black;
     margin: 10px 10px 30px 10px;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 /* content styling */
 #content{
     padding: 0 18px;
     background-color: #708090;
-    width: 90%;
+    width: 60%;
     margin: auto;
     padding: 10px 10px 10px 10px;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 20px
 }
 
@@ -63,15 +66,17 @@ button{
     text-align: center;
     color: black;
     margin: 10px 10px 10px 10px;
-    cursor: pointer;
 }
 
 #header{
+    border: 2px solid white;
+    color: white;
     border-radius: 20px;
-    width: 70%;
+    width: 50%;
     margin: 20px auto;
 }
 /* sizing the image */
 img {
     width: 70%;
+    cursor: pointer;
 }

@@ -6,6 +6,7 @@
     <script src = "gallery.js"></script><!-- making a connection to javascript file-->
 </head>
 <body>
+    <p id="header">My WEB_DEV Gallery</p>
 <!--main div section opens-->
 <div>
     <p id = "image">Hover over an image below to display<p>
@@ -13,25 +14,24 @@
     <div id="buttons">
         <button onclick = "openFunction()">Explain pictures</button>
         <button onclick = "closeFunction()">Hide explaination</button>
-        <p id="content">This is a photo gallery, displaying the logos of process of baking cupcakes.</p>
+        <p id="content">This is a sample photo gallery, about the Web Development.</p>
     </div>
 </div>
-<p id="header">My CupCake Photo Gallery</p>
 
 <!-- using functions to update image according to response -->
-<img alt="Lets do Batter!" class="preview"
+<img src="images/1.jpg" alt=" " class="preview"
      onmouseout="unDo()"
      onmouseover="upDate(this)"
-     src="https://cdn.sallysbakingaddiction.com/wp-content/uploads/2017/06/moist-chocolate-cupcakes-7.jpg"> <!--img path, url to display online image-->
+     > <!--img path, url to display online image-->
 
-<img alt="Lets Bake!" class="preview"
+<img src="images/2.png" alt=" " class="preview"
      onmouseout="unDo()"
      onmouseover="upDate(this)"
-     src="https://cdn.sallysbakingaddiction.com/wp-content/uploads/2017/06/moist-chocolate-cupcakes-6.jpg">
+     >
 
-<img alt="Cupcake is ready to eat!" class="preview"
+<img src="images/3.jpg" alt=" " class="preview"
      onmouseout="unDo()"
      onmouseover="upDate(this)"
-     src="https://cdn.sallysbakingaddiction.com/wp-content/uploads/2017/06/moist-chocolate-cupcakes-5.jpg">
+     >
 </body>
 </html>
