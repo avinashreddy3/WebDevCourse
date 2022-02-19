@@ -1,4 +1,4 @@
-function getGithubInfo(user) {
+    function getGithubInfo(user) {
     // created two variables to get user_info
     var username = user;
     var requri = 'https://api.github.com/users/' + username;

@@ -1,0 +1,41 @@
+<!DOCTYPE html><!--This represents that the document type is HTML-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><!--This specifies the character encoding which is optional to add in the code-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Todo Application Task 1</title> <!--effects the brower's title bar-->
+
+</head>
+<body>
+<br>
+<br>
+<br>
+
+<!-- div section opened -->
+<div class="todos">
+
+  <!-- whole content is wrapped into the container -->
+  <div class="container">
+    <form #todoForm= "ngForm"(submit)="todoSubmit(todoForm.value); todoForm.resetForm()" >
+      <div class="form-group">
+        <h1 class="text-center ">Todo List</h1>
+        <div class="input-group-prepend">
+          <input type="text" #todo  class="form-control" placeholder="Enter the task" name="todo" ngModel>
+          <span class="input-group-text" (click)="addTodo(todo.value)">
+            <i>+</i></span>
+        </div>
+      </div>
+      <div class="data">
+        <ul class="list-unstyled">
+          <!-- this helps to call the ng module using "ng serve" and run the app on the browser -->
+          <li *ngFor="let todo of todoArray">{{todo}} <i (click)="deleteItem(todo)">Remove it from list</i></li>
+        </ul>
+      </div>
+    </form>
+    <!-- closing the form -->
+
+  </div>
+  
+</div>
+</body>
+</html>
