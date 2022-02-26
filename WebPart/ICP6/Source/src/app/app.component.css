@@ -1,0 +1,8 @@
+
+/* styling the background image our website */
+.image{
+  height:100vh; 
+  background-size: cover; 
+  width: 100%;
+  background-image:url('~images/recipe.jpg'); 
+}
