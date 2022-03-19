@@ -5,7 +5,7 @@
 
 Email: dkbmy@umsystem.edu
 
-GitHub Link:    
+GitHub Link:    https://github.com/Dharmateja183/Web-and-Mobile-programming-spring-2022/tree/main/Webpart/ICP8
 
 
 
@@ -14,4 +14,4 @@ GitHub Link:
 
 Email: atfkh@umsystem.edu
 
-GitHub link: 
+GitHub link: https://github.com/avinashreddy3/WebDevCourse/tree/main/MobilePart/ICP8
