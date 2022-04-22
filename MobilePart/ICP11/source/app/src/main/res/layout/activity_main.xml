@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--relative layout is view group which shows the child view in their relative positions-->
+<!-- here we added top padding to our android app-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="65dp"
+    tools:context=".MainActivity">
+
+<!--    added one text view feature with below parameters-->
+    <TextView
+        android:id="@+id/textViewTTS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text to Speech"
+        android:textColor="#ff1c1c"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"
+        />
+
+<!--    added one edittext field and created an id -->
+    <EditText
+        android:id="@+id/editTextTTS"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="enter your text"
+        android:layout_below="@+id/textViewTTS"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="35dp"
+        />
+
+<!--    added a user interactive speak button -->
+    <Button
+        android:id="@+id/btnTTS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTTS"
+        android:layout_centerHorizontal="true"
+        android:text="Speak"
+        />
+
+</RelativeLayout>
